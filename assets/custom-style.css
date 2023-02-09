@@ -1,0 +1,274 @@
+/***global **/
+*{
+  font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp';
+}
+body {
+  font: 16px/1.5 "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+h1, h2, h3{
+  color: #222;
+}
+blockquote{
+  background: #ddd;
+}
+
+.section-title{
+}
+.navbar-main .navbar-nav>li>a{
+  font-size: 1.3em;
+}
+.navbar-logo{
+  float: left;
+  margin-top: 20px;
+  font-size: 32px;
+}
+.navbar-logo img{
+  float: left;
+  max-height: 40px;
+  margin: 3px 5px;
+}
+/***detail content **/
+.post-content a{
+  color: #03c9a9;
+  text-align: left;
+}
+.label a {
+  color: #fff important!;
+}
+.listing-title a{
+  color: #222;
+}
+.post-title{
+  color: #222;
+}
+
+.content{
+  padding: 20px;
+}
+.content a {
+  background:
+     linear-gradient(
+       to right,
+       #ff9800 0%,
+       #ff9800 5px,
+       transparent 5px
+     );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  margin-left: 2px;
+  padding-left: 4px;
+  color: #03c9a9;
+}
+.content a:hover {
+  background:
+     linear-gradient(
+       to right,
+       #ff9800 0%,
+       #ff9800 5px,
+       transparent
+     );
+}
+.content img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+.news-detail h1, .news-detail h2, .news-detail h3{
+  color: #03c9a9;
+  text-align: left;
+}
+
+.news-detail h1:before, .news-detail h2:before, .news-detail h3:before{
+  content:"";
+  color: #03c9a9;
+  font-weight:bold;
+}
+
+.news-detail p{
+  text-align: justify;
+  word-break: break-word;
+  margin: 0 0 25px 0;
+  color: #222;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.block-title a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.updated_at{
+  font-size:12px;
+  color: #ccc;
+}
+
+.sct-color-white{
+  background-color: #fff;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.pl-10{
+  padding-left: 10px;
+}
+.pr-10{
+  padding-right: 10px;
+}
+.print-desc{
+  display: none;
+}
+
+@media print {
+  .header{
+    display: none;
+  }
+  .global-search-wrapper{
+    display: none;
+  }
+  .navbar, .social-media, .st-menu-title{
+    display: none;
+  }
+  .nav{
+    display: none;
+  }
+  .meta-info-cells{
+    display: none;
+  }
+  .post-channel, .post-labels{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
+  .breadcrumb{
+    display: none;
+  }
+  #meiqia-container{
+    display: none;
+  }
+  .print-desc{
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #222;
+  }
+}
+  .mx-auto{
+    margin: 0 auto;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .bg-fa{
+    background:rgba(250,250,250,1);
+    border:1px solid rgba(230,230,230,1);
+    position: relative;
+    border-radius: 5px;
+  }
+  .box-shodow{
+    border:1px solid #F5F5F5
+  }
+  .box-shodow:hover{
+    box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+  }
+  .bg-fa::after{
+    content: ''
+  }
+  .pr-60{
+    padding-right: 160px
+  }
+  .pl-60{
+    padding-left: 160px
+  }
+  .fontSIze-14{
+    font-size: 14px;
+    padding-left:22px
+  }
+  .fontsize-14{
+    font-size: 14px
+  }
+  .border-tanmer{
+    position: relative;
+  }
+  .border-tanmer::after{
+    content: "";
+    border: 1px dashed #03C9A9;
+    display: block;
+    width: 1px;
+    height: 265px;
+    position: absolute;
+    left: 35.6%;
+  }
+  .bg-white{
+    background: white;
+  }
+  .p-40{
+    padding: 40px
+  }
+  .m-height-200{
+    height: 200px
+  }
+  .border-e6{
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    padding: 10px
+  }
+  .text-888{
+    color: #888
+  }
+  .show-border::after{
+    border-bottom: 2px solid #03C9A9;
+    content: '';
+    display: block;
+    width: 80px;
+    margin: 16px auto 40px;
+  }
+  .service_p{
+    font-size: 16px;
+    color: #888;
+    display: none
+  }
+  .service:hover .service_p{
+    display: block;
+  }
+  .service_show_p{
+    font-size: 18px;
+    margin-top: 20px;
+    display: block;
+  }
+  .service:hover .service_show_p{
+    display: none;
+  }
+  .saas_num{
+      font-size: 50px;
+      color: #165DCD;
+    }
+  .text-white{
+    color: #fff
+  }
+  .bg-tanmer{
+    background: #03C9A9
+  }
+  .saas_num::after{
+    border-bottom: 2px solid #165DCD;
+    content: '';
+    display: block;
+    width: 80px;
+    margin-left: auto;
+  }
+  .tanmer-banner{
+    display: none;
+  }
+ .banner-t .active{
+    display: block;
+  }

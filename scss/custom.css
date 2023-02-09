@@ -1,0 +1,266 @@
+/*
+/*
+/*  custom.css
+/*
+/*  If not using Gulp and Sass, add your custom CSS below then include it
+/*  in your page by adding a reference to assets/css/custom.css in the head of each page.
+/*
+*/
+
+.theme-list ul {
+    list-style-image: url(../img/icons/theme/home/book-open.svg);
+}
+
+.theme-list li{
+    line-height: 3rem;
+}
+
+h1, .h1 {
+  font-size: 1.75rem;
+}
+h2, .h2{
+  font-size: 1.5rem;
+}
+h3, .h3{
+  font-size: 1.25rem;
+}
+h4, .h4{
+  font-size: 1.125rem;
+}
+h5, .h5{
+  font-size: 1rem;
+}
+h6, .h6{
+  font-size: 0.85rem;
+}
+
+article .editor_js--paragraph{
+  font-size: 1.2em !important;
+  margin-top: 0.86em;
+  margin-bottom: 26px;
+  word-wrap: break-word;
+}
+
+article ol > li:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.price-false {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: rgba(3,201,169,0.2);
+}
+
+/* quote  */
+.editor_js--quote{
+  position: relative;
+  border-radius: 0.625rem;
+  padding: 3rem;
+  margin: 3rem 0;
+  background: #f0fcfa;
+}
+.editor_js--quote__text{
+  letter-spacing: -.03em;
+  margin-bottom: 0.75rem !important;
+  font-size: 1.25rem;
+}
+.editor_js--quote__caption{
+  color: #adb5bd !important;
+  box-sizing: border-box;
+}
+/* image */
+.editor_js--qiniu_image{
+  padding: 1rem 0;
+}
+.editor_js--qiniu_image__caption{
+  text-align: center;
+}
+.editor_js--qiniu_image__picture img{
+  border-radius: 8px;
+}
+
+footer{
+  padding: 0em !important;
+}
+.fitscreen {
+  max-width: 96%;
+}
+.minwidth-limit{
+  min-width: 269px;
+}
+.ml-dec-10{
+  margin-left: -10px;
+}
+.pos-relative-center{
+  margin: 0 auto;
+  position: relative;
+}
+.ali-base{
+  align-items: baseline;
+}
+.video-play-screen{
+  min-height: 46vh;
+}
+@media (max-width: 1199px) {
+  .video-play-screen{
+    min-height: 39vh;
+  }
+}
+@media (max-width: 991px) {
+  .video-play-screen{
+    min-height: 24vh;
+  }
+}
+@media (max-width: 761px) {
+  .video-play-screen{
+    min-height: 20vh;
+  }
+}
+@media (max-width: 499px) {
+  .video-play-screen{
+    min-height: 10vh;
+  }
+}
+.white-space-none{
+  white-space: unset;
+}
+
+@media (max-width: 351.98px){
+  .navbar-brand {
+    width: 5em;
+  }
+}
+
+.hand-tips {
+  position: absolute;
+  right: 13%;
+  height: 5rem;
+  opacity: 0;
+  animation: heart 1.3s ease-in-out 2.7s infinite alternate,fadeIn 10s ease-in-out 6s 2 alternate;
+}
+
+.bottom-hand-tips {
+  position: absolute;
+  right: 13%;
+  height: 5rem;
+  opacity: 0.8;
+  animation: heart 1.3s ease-in-out 2.7s infinite alternate;
+}
+
+@keyframes heart {
+  from{transform:translate(0,0)}
+  to{transform:translate(0,30px)}
+}
+
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@media (max-width: 991.98px){
+  .navbar-brand {
+    width: 5em;
+  }
+  .hand-tips {
+    height: 4rem;
+  }
+  @keyframes heart{
+    from{transform:translate(0,0)}
+    to{transform:translate(0,15px)}
+  }
+}
+
+@media (min-width:992px) {
+  .customer-case-slide img {
+    max-width: 1000px;
+    max-height: 680px;
+  }
+}
+
+/* flickity-fade */
+
+.flickity-enabled.is-fade .flickity-slider > * {
+  pointer-events: none;
+  z-index: 0;
+}
+
+.flickity-enabled.is-fade .flickity-slider > .is-selected {
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.industry__solution_desc {
+  color: #f8f9fa;
+}
+
+.industry__solution_title {
+  letter-spacing: 0.15rem;
+}
+
+.industry__solution_subtitle {
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.industry__solution_scene_section, .industry__solution_case_section, .industry__solution_question {
+  background-color: white;
+}
+
+.industry__solution_case_cards > .industry__solution_case_card:nth-child(2) > a {
+  background-color: #03c9a9;
+}
+
+.industry__solution_case_cards > .industry__solution_case_card:nth-child(3) > a {
+  background-color: #639ee6;
+}
+
+.industry__solution_case_cards > .industry__solution_case_card:nth-child(4) > a {
+  background-color: #212529;
+}
+
+.industry__solution_case_cards > .industry__solution_case_card:not(:first-child) h5 {
+  color: white;
+}
+
+.industry__solution_case_cards > .industry__solution_case_card:not(:first-child) .icon {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.industry__solution_case_cards > .industry__solution_case_card:first-child .icon {
+  background: rgba(3, 201, 169, 0.1) !important;
+}
+
+
+.industry__solution_case_card:hover {
+  transform: translate3d(-4px,-4px,0) rotateZ(-1deg);
+}
+
+.industry__solution_question_plus {
+  width: 15px;
+  height: 15px;
+  transition: transform .1s ease;
+}
+
+.accordion-panel-title[aria-expanded="true"] .industry__solution_question_plus{
+  transform: rotate(45deg);
+  transition: transform .1s ease;
+}
+
+.industry__solution_question_link {
+  color: #303030;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.industry__solution_question_link:hover {
+  text-decoration: underline;
+}
+
+.page--article__tags > a {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  list-style: none;
+  background-color: rgba(3, 201, 169, 0.1);
+  border-radius: 200rem;
+}

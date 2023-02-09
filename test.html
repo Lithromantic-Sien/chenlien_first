@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<style>
+    fade-enter-active, .fade-leave-active {
+        transition: opacity 2s
+    }
+    {
+        opacity: 0
+    }
+</style>
+<body>
+<div id = "databinding">
+    <button v-on:click = "show = !show">点我</button>
+    <transition name = "fade">
+        <p v-show = "show" v-bind:style = "styleobj">动画实例</p>
+    </transition>
+</div>
+<script type = "text/javascript">
+    var vm = new Vue({
+        el: '#databinding',
+        data: {
+            show:true,
+            styleobj :{
+                fontSize:'30px',
+                color:'red'
+            }
+        },
+        methods : {
+        }
+    });
+</script>
+</body>
+</html>
